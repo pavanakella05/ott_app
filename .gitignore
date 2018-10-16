@@ -1,0 +1,9 @@
+# local config files
+.config/
+
+# vendor files
+node_modules
+
+# gulp compiled/built
+compiled
+dist
