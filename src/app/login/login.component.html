@@ -1,0 +1,23 @@
+<mat-toolbar class="heads"><strong>ONLINE TECHNICAL TEST</strong></mat-toolbar>  
+
+  <div class="body1">  
+      
+  <!-- <div class="heads">Online Evaluation Test </div>-->
+    <div class="container">
+   <div class="heading"><strong>Login</strong></div>
+      <form class="form" [formGroup]="loginform">
+
+      <mat-form-field class=".example-full-width-email">
+        <input type="email" autocomplete="off" matInput placeholder="Email" formControlName="email">
+      </mat-form-field><br/>
+
+      <mat-form-field class="full-width-layout">
+        <input type="password" autocomplete="off" matInput placeholder="Password" formControlName="password">
+      </mat-form-field><br/>
+
+      <div class="formchild">
+        <button type="button"  mat-flat-button color="primary" [disabled]="loginform.invalid" (click)="submited()">login</button> 
+      </div>
+      </form>
+    </div>
+  </div>

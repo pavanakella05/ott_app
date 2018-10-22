@@ -1,0 +1,149 @@
+
+  h1{
+    color:black;
+    font-family: "Lato", sans-serif;
+    
+  }
+  .nav{
+    padding-left: 32%;
+    padding-top:2px;
+
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 11px;
+    animation-duration: 1s;
+    animation-name: fadeIn;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 3px;
+  margin-right: 0px;
+  }
+  img{
+ 
+    height:100%;
+    max-width:170px;
+    padding-left:10px;
+    /* position: absolute; */
+    left:42%;
+    padding-top:2px;
+    top:0px;
+    border:0;
+    line-height:0;
+  
+  }
+
+.full-width-layout{
+  width: 100%;
+}
+
+  .mat-radio-button ~ .mat-radio-button {
+    padding-right: 16px;
+  }
+  .body1> .container>.form{
+    display: flex;
+    flex-direction:column;
+    align-items: left;
+  }
+  .body1{
+   border:0px;
+    height: 100%;
+    width: 100%;
+    left:0px;
+    right:0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+ 
+    background-image: linear-gradient(to left bottom,rgba(219, 9, 9, 0.8), rgba(51, 51, 51, 0.8));
+
+    font-family: "Lato", sans-serif;
+  }
+
+  .container{
+    
+      position:relative;
+    /* max-width:90%; */
+    /* box-shadow: 0px 2px 2px 2px azure; */
+    padding:25px;
+    /* border-radius: 20px ; */
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color: azure;
+    width:520px;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  
+  box-shadow: 1px 1px 1px 1px #ededed;
+
+  /* padding: 15px 20px; */
+
+  }
+  .mat-form-field{
+    width: 300px;
+  }
+  .heading{
+      /* position: relative;
+      width:330px;
+      max-width:90%;
+      height:30px;
+      left:495px;
+      top:1px;
+      padding:15px;
+      background-color:black;
+      color:white;
+      margin: 0px; */
+      margin-top: 0px;
+      max-width:90%;
+     
+      /* box-shadow: 0px 2px 2px 2px azure; */
+      padding:07px;
+      /* border-radius: 20px ; */
+      /* margin-bottom: 40px;
+      margin-top: 40px; */
+      background-color: transparent;
+      color:black;
+      font-family: "Lato", sans-serif;
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .example-full-width {
+    width: 250px;
+  }
+  .example-full-width-lname{
+      padding-left:20px;
+      width: 250px;
+      padding-right:30px;
+  }
+
+  .example-full-width-email{
+    width: 520px;
+  }
+  .div-gender{
+      position: relative;
+      left:30%;
+  }
+  input{
+    font-family: "Lato", sans-serif;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  } 
+  
+  @media only screen and (max-width: 600px) {
+    .heads {
+      font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding-left:16%;
+        
+    }
+}

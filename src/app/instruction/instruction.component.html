@@ -1,0 +1,36 @@
+<mat-toolbar class="heads"><p class="p1"><strong>Hello,{{username}}</strong> <button mat-raised-button (click)="logout()">logout</button></p></mat-toolbar>  
+
+
+
+<div class="body1">  
+<mat-card class="mat1">
+    <mat-card-title>	Online Technical Test</mat-card-title>	<mat-divider></mat-divider><br>
+    <h4>Instructions</h4>
+    <ul>
+      <li>Test time limit is <strong>10 min</strong>. </li>
+      <li>This test has 15 Questions.</li>
+      <li>Each Question is of <strong>1 marks.</strong></li>
+      <li><strong>0.5</strong> marks will be deducted for wrong answer.</li>
+    </ul>
+    <!-- <mat-form-field>
+        <mat-select placeholder="Select Topic">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      
+
+    <mat-card-footer><button mat-raised-button (click)="ToTest()"	>submit</button></mat-card-footer>
+
+
+</mat-card>
+  </div>

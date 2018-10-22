@@ -3,39 +3,17 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ott": {
+    "onlinetest": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {
-        "@schematics/angular:class": {
-          "spec": false
-        },
-        "@schematics/angular:component": {
-          "spec": false
-        },
-        "@schematics/angular:directive": {
-          "spec": false
-        },
-        "@schematics/angular:guard": {
-          "spec": false
-        },
-        "@schematics/angular:module": {
-          "spec": false
-        },
-        "@schematics/angular:pipe": {
-          "spec": false
-        },
-        "@schematics/angular:service": {
-          "spec": false
-        }
-      },
+      "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ott",
+            "outputPath": "dist/onlinetest",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ott:build"
+            "browserTarget": "onlinetest:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ott:build:production"
+              "browserTarget": "onlinetest:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ott:build"
+            "browserTarget": "onlinetest:build"
           }
         },
         "test": {
@@ -117,7 +95,7 @@
         }
       }
     },
-    "ott-e2e": {
+    "onlinetest-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -125,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ott:serve"
+            "devServerTarget": "onlinetest:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ott:serve:production"
+              "devServerTarget": "onlinetest:serve:production"
             }
           }
         },
@@ -145,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "ott"
+  "defaultProject": "onlinetest"
 }
