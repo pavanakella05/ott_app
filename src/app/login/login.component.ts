@@ -15,14 +15,22 @@ export class LoginComponent implements OnInit {
       email:['',[Validators.email,Validators.required]],
       password:['',Validators.required],
     });
+    this.test.user()  //calls user func in service.
+    .subscribe(
+      data=>{console.log("error");this.router.navigate(['/instruction'])},  //data coming from service as response
+      error=>this.router.navigate(['/login'])
+    )
    }
+   
 
   ngOnInit() {
   }
+
   submited(){
     if(!this.loginform.valid){
       console.log('Invalid');return;
     }
+    
 
     // console.log(JSON.stringify(this.loginForm.value));
     this.test.login(JSON.stringify(this.loginform.value))

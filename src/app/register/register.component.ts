@@ -17,7 +17,7 @@ export class RegisterComponent implements OnInit {
       fname:['',[Validators.required,Validators.pattern("^[a-zA-Z \s]*$"),Validators.maxLength(15)]],
       lname:['',[Validators.required,Validators.pattern("^[a-zA-Z \s]*$"),Validators.maxLength(15)]],
       email:['',[Validators.email,Validators.required]],
-      phone: ['',Validators.required],
+      phone: ['',[Validators.required, Validators.pattern('^[0-9]{10}$')]],
       date1:['',Validators.required],
       Address:['',Validators.required],
       gender:['',Validators.required],
@@ -38,6 +38,7 @@ export class RegisterComponent implements OnInit {
   submited(){
     // this.router.navigate(['login']);
     if(!this.createForm.valid || (this.createForm.controls.password.value != this.createForm.controls.cpassword.value)){
+      alert("please enter correct passwords")
       console.log('Invalid Form'); return;
     }
     console.log(this.createForm.value);
@@ -51,10 +52,8 @@ export class RegisterComponent implements OnInit {
   }
   notify(){
     alert("done");
-    this.hi="byeee";
+    this
   }
-
-
     
   }
 

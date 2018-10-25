@@ -1,0 +1,7 @@
+{"collection" :
+    [
+    {"n":1,"name":"this is 1st Question","rad1":"option1","rad2":"option2","rad3":"option3","rad4":"option4"},
+    {"n":2,"name":"this is second Question","rad1":"option1","rad2":"option2","rad3":"option3","rad4":"option4"}
+   ,{"n":3,"name":"this is third Question","rad1":"option1","rad2":"option2","rad3":"option3","rad4":"option44"}
+]
+}

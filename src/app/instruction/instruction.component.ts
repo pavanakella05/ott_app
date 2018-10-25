@@ -14,6 +14,7 @@ export interface Food {
 
 
 export class InstructionComponent implements OnInit {
+  choice="";
   username:String='';
   foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},
@@ -42,6 +43,12 @@ export class InstructionComponent implements OnInit {
     )
   }
   ToTest(){
-    this.router.navigate(['testcomp'])
+    this.router.navigate(['/testcomp'])
   }
+
+  choice1(){
+    this.choice="Angular"
+    
+  }
+
 }

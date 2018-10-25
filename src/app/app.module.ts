@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { AppComponent } from './app.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { InstructionComponent } from './instruction/instruction.component';
@@ -25,6 +27,7 @@ import { TestcompComponent } from './testcomp/testcomp.component';
     TestcompComponent,
   ],
   imports: [
+    NgxPaginationModule,
     BrowserModule,
     TestRoutingModule,
     FormsModule,
@@ -36,8 +39,6 @@ import { TestcompComponent } from './testcomp/testcomp.component';
     MatDatepickerModule,MatNativeDateModule,
     MatRadioModule,MatFormFieldModule,MatInputModule,MatOptionModule,MatSelectModule,MatIconModule
     ,MatButtonModule,MatCardModule,MatTableModule,MatDividerModule,MatSnackBarModule,MatToolbarModule
-
-
   ],
   providers: [TestService],
   bootstrap: [AppComponent]

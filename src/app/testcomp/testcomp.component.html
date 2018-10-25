@@ -1,3 +1,26 @@
-<p>
-  testcomp works!
-</p>
+<mat-toolbar class="heads"><p class="p1"><strong>Hello,{{username}}</strong> [space for clock] </p></mat-toolbar>  
+
+
+<div class="body1">  
+    <mat-card class="mat1">
+        <mat-card-title class="title">	Technical Test(Angular)- Online MCQ(Multiple Choice Questions) Test</mat-card-title>	<mat-divider></mat-divider><br>
+                
+                <div *ngFor="let x of temps.collection ">
+                    <div *ngIf="choice1">
+                  <h4>{{x.n}}.{{x.name}}</h4>
+                <mat-radio-group>
+                    <!-- <input type="radio" name='foo' (change)="radiochange($event)" value="{{x.rad1}}" >{{x.rad1}}<br><br>
+                    <input type="radio" name='foo' (change)="radiochange($event)" value="{{x.rad2}}" >{{x.rad2}}<br><br>
+                    <input type="radio" name='foo' (change)="radiochange($event)" value="{{x.rad3}}" >{{x.rad3}}<br><br>
+                    <input type="radio" name='foo'(change)="radiochange($event)"  value="{{x.rad4}}" >{{x.rad4}}<br><br> -->
+                    <mat-radio-button value="3" (change)="radiochange($event)" >{{x.rad1}}</mat-radio-button><br><br>                                            
+             <mat-radio-button  value="2" >{{x.rad2}}</mat-radio-button><br><br>
+                    <mat-radio-button value="3">{{x.rad3}}</mat-radio-button><br><br>
+                    <mat-radio-button value="4" >{{x.rad4}}</mat-radio-button><br><br> 
+                </mat-radio-group>
+                </div>
+              </div>
+         <mat-card-footer class="footer"> <button mat-raised-button (click)="ToPrevious()"	>previous</button><button mat-raised-button (click)="ToNext()">submit</button></mat-card-footer>
+            <!--<button mat-button>submit</button>  --> <pagination-controls  (pageChange)="p = $event"> </pagination-controls> 
+    </mat-card>
+      </div>

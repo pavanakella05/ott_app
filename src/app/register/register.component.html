@@ -1,57 +1,63 @@
-<mat-toolbar class="nav"> <strong>ONLINE TECHNICAL TEST </strong></mat-toolbar>  
-<!-- <countdown [config]="{leftTime: 3}" (onChanges)="onNotify()">$!m!:$!s!</countdown>
-<-- {{hi}} <img src="https://static1.squarespace.com/static/5ab6b93e5b409be7fa331cf1/t/5ac67b8c575d1f09cf1c833c/1538167516937/?format=1500w"/> -->
+<mat-toolbar class="nav"> <strong>ONLINE TECHNICAL TEST </strong> </mat-toolbar>  
 <div class="body1">  
-<!-- <div class="heads">Online Evaluation Test </div>-->
+
   <div class="container">
-      <div class="heading"><strong>Register</strong></div>
-    <form class="form" [formGroup]="createForm">
-  
-    <table class="example-full-width" cellspacing="0"><tr>
-        <td><mat-form-field class="example-full-width">
-          <input type="text" autocomplete="off" matInput placeholder="First name*" formControlName="fname">
-        </mat-form-field></td>
-        <td><mat-form-field class="example-full-width-lname">
-          <input type="text" autocomplete="off" matInput placeholder=" Last Name*" formControlName="lname">
-        </mat-form-field></td>
-      </tr></table>
-
-    <mat-form-field class="example-full-width-email">
-      <input type="email" autoComplete="off"  matInput placeholder="email" formControlName="email">
-    </mat-form-field><br/>
-
-    <table class="example-full-width" cellspacing="0"><tr>
-        <td><mat-form-field class="example-full-width">
-          <input type="text" matInput placeholder="Phone" formControlName="phone">
-        </mat-form-field></td>
-        <td><mat-form-field class="example-full-width-lname">
-            <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" placeholder="DOB" formControlName="date1">
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-          </mat-form-field>
-      </tr></table>
-
-    <mat-form-field class="example-full-width-email">
-        <input type="text" autoComplete="off"  matInput placeholder="Address" formControlName="Address">
-      </mat-form-field><br/>
-
-      <table class="example-full-width" cellspacing="0"><tr>
+    <div class="heading"><strong>Register</strong></div>
+      <form class="form" [formGroup]="createForm">
+        <table class="example-full-width" cellspacing="0">
+          <tr>
           <td><mat-form-field class="example-full-width">
-            <input matInput placeholder="Password" formControlName="password">
+            <input type="text" autocomplete="off" matInput placeholder="First name*" formControlName="fname">
+              <mat-error>please enter valid name</mat-error>
           </mat-form-field></td>
           <td><mat-form-field class="example-full-width-lname">
-            <input matInput placeholder=" Confirm Password" formControlName="cpassword">
+            <input type="text" autocomplete="off" matInput placeholder=" Last Name*" formControlName="lname">
+              <mat-error>please enter valid name</mat-error>
           </mat-form-field></td>
-        </tr></table>
-        <div class="div-gender">
-    <mat-radio-group formControlName="gender">
-      <mat-radio-button value="male">Male</mat-radio-button>
-      <mat-radio-button value="female">Female</mat-radio-button>
-    </mat-radio-group><br></div>
+          </tr>
+          </table>
 
-    <div class="formchild">
-      <button type="button" mat-flat-button color="primary" [disabled]="createForm.invalid" (click)="submited()">Register</button> 
-    </div>
+          <mat-form-field class="example-full-width-email">
+            <input type="email" autoComplete="off"  matInput placeholder="email*" formControlName="email">
+              <mat-error>please enter valid Email</mat-error> </mat-form-field><br/>
+
+          <table class="example-full-width" cellspacing="0"><tr>
+            <td><mat-form-field class="example-full-width">
+              <input type="text" matInput placeholder="Phone*" formControlName="phone">
+                <mat-error>please enter valid Phone Number</mat-error></mat-form-field></td>
+            <td><mat-form-field class="example-full-width-lname">
+              <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" placeholder="DOB" formControlName="date1">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </tr>
+          </table>
+
+          <mat-form-field class="example-full-width-email">
+            <input type="text" autoComplete="off"  matInput placeholder="Address" formControlName="Address">
+          </mat-form-field><br/>
+
+          <table class="example-full-width" cellspacing="0"><tr>
+            <td><mat-form-field class="example-full-width">
+              <input matInput  type="password" placeholder="Password" formControlName="password">
+            </mat-form-field></td>
+            <td><mat-form-field class="example-full-width-lname">
+            <input matInput  type="password"  placeholder=" Confirm Password" formControlName="cpassword">
+             </mat-form-field></td>
+            </tr>
+          </table>
+        <div class="div-gender">
+          <mat-radio-group formControlName="gender">
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+            </mat-radio-group><br>
+        </div>
+
+        <div class="formchild">
+          <button type="button" mat-flat-button color="primary" [disabled]="createForm.invalid" (click)="submited()">Register</button> 
+        </div>
     </form>
   </div>
 </div>
+<mat-toolbar class="footer">Made  @ Accion Labs, Inc.</mat-toolbar>  
+

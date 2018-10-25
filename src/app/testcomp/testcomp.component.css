@@ -1,0 +1,59 @@
+.heads{
+    height:100%;
+     /* background-color: whitesmoke; */
+     padding-right:20px;
+     background-image: linear-gradient(to left bottom,rgba(219, 9, 9, 0.8), rgba(51, 51, 51, 0.8));
+   }
+
+.p1{
+    margin-left:70%;
+    font-family: "Lato", sans-serif; 
+}
+p{ 
+    padding-right:10px;
+    left:10px;
+
+}
+.body1{
+    margin-top:25px;
+    border:0px;
+     height: 100%;
+     width: 100%;
+     left:0px;
+     right:0px;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color:  white;
+    
+    
+   }
+   .title{
+    font-size:22px;
+    font-family: "Lato", sans-serif; 
+
+   }
+   mat1{ 
+      max-width:200%;
+       max-height:200%;
+       font-family: "Lato", sans-serif;
+       font-size:20px;
+       border-radius: 25px;
+   }
+   h4{
+       padding-left: 10px;
+   }
+
+   mat-card-footer{
+       background-color: #F4F6F7;  
+       padding:2px;
+   }
+   .mat-radio-button{
+    padding-left: 10px;
+  }
+
+
+
+
+

@@ -1,0 +1,16 @@
+
+.footer{
+    font-family: "Lato", sans-serif;
+    height:15vh;
+    background-color: #332b28;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255,255,255,.9);
+    padding:40px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    font-size:18px;
+  
+  
+  }
+  
